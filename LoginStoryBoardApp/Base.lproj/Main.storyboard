@@ -87,17 +87,17 @@
                                                         <fontDescription key="titleFontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="20"/>
                                                     </buttonConfiguration>
                                                 </button>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kXB-ZA-8OQ" userLabel="Account">
-                                                    <rect key="frame" x="74.5" y="760.5" width="265.5" height="35.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kXB-ZA-8OQ" userLabel="Account">
+                                                    <rect key="frame" x="73" y="760.5" width="268.5" height="35.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dont't have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-Te-34p">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont't have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-Te-34p">
                                                             <rect key="frame" x="0.0" y="0.0" width="169.5" height="35.5"/>
                                                             <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-TK-FId">
-                                                            <rect key="frame" x="171.5" y="0.0" width="94" height="35.5"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-TK-FId">
+                                                            <rect key="frame" x="174.5" y="0.0" width="94" height="35.5"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="SignUp">
                                                                 <fontDescription key="titleFontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="20"/>
@@ -108,13 +108,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Jb-MS-3Ld" secondAttribute="trailing" constant="30" id="25e-GJ-D1G"/>
+                                                <constraint firstItem="kXB-ZA-8OQ" firstAttribute="centerX" secondItem="c5F-lK-JHs" secondAttribute="centerX" id="2Wl-Bd-QFl"/>
                                                 <constraint firstItem="VRB-wN-ByV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c5F-lK-JHs" secondAttribute="leading" constant="30" id="4qa-Wl-GfB"/>
                                                 <constraint firstItem="Ftg-8K-wSa" firstAttribute="leading" secondItem="IZe-zy-Jtu" secondAttribute="leading" id="6yj-1w-MKS"/>
-                                                <constraint firstItem="kXB-ZA-8OQ" firstAttribute="centerX" secondItem="c5F-lK-JHs" secondAttribute="centerX" id="ClN-r4-Bhp"/>
                                                 <constraint firstItem="Gwp-6q-E7l" firstAttribute="top" secondItem="c5F-lK-JHs" secondAttribute="topMargin" constant="60" id="Ftx-nu-81A"/>
                                                 <constraint firstItem="5Jb-MS-3Ld" firstAttribute="top" secondItem="Gwp-6q-E7l" secondAttribute="bottom" constant="40" id="H0D-zO-6oY"/>
                                                 <constraint firstItem="ncT-gU-6Gz" firstAttribute="leading" secondItem="5Jb-MS-3Ld" secondAttribute="leading" id="JlE-Xj-pZ7"/>
-                                                <constraint firstAttribute="bottom" secondItem="kXB-ZA-8OQ" secondAttribute="bottom" constant="20" id="ObY-Ab-9LP"/>
                                                 <constraint firstItem="5Jb-MS-3Ld" firstAttribute="leading" secondItem="c5F-lK-JHs" secondAttribute="leading" constant="30" id="Qwq-P3-9yV"/>
                                                 <constraint firstItem="IZe-zy-Jtu" firstAttribute="top" secondItem="5Jb-MS-3Ld" secondAttribute="bottom" constant="10" id="Usg-1U-dDG"/>
                                                 <constraint firstItem="Ftg-8K-wSa" firstAttribute="height" secondItem="IZe-zy-Jtu" secondAttribute="height" id="Vvz-eN-3wk"/>
@@ -128,6 +127,7 @@
                                                 <constraint firstItem="IZe-zy-Jtu" firstAttribute="leading" secondItem="5Jb-MS-3Ld" secondAttribute="leading" id="hpw-t7-eZN"/>
                                                 <constraint firstItem="RYw-Pi-uQ5" firstAttribute="leading" secondItem="VRB-wN-ByV" secondAttribute="leading" id="kMV-bk-qSh"/>
                                                 <constraint firstItem="RYw-Pi-uQ5" firstAttribute="top" secondItem="VRB-wN-ByV" secondAttribute="bottom" constant="10" id="mwu-Ht-zqR"/>
+                                                <constraint firstAttribute="bottom" secondItem="kXB-ZA-8OQ" secondAttribute="bottom" constant="20" id="pil-5v-Nma"/>
                                                 <constraint firstItem="ncT-gU-6Gz" firstAttribute="trailing" secondItem="5Jb-MS-3Ld" secondAttribute="trailing" id="qJM-Tr-l9I"/>
                                                 <constraint firstItem="VRB-wN-ByV" firstAttribute="top" secondItem="Ftg-8K-wSa" secondAttribute="bottom" constant="20" id="qfe-2z-KJT"/>
                                                 <constraint firstItem="Ftg-8K-wSa" firstAttribute="top" secondItem="ncT-gU-6Gz" secondAttribute="bottom" constant="10" id="vPv-c8-Cay"/>
