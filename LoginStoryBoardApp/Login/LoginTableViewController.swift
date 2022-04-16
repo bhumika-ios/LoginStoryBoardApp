@@ -15,33 +15,46 @@ class LoginTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     
     
+    
+ 
+    
     @IBAction func btnLoginClicked(_ sender: UIButton) {
         
+        Validation()
+    }
+    @IBAction func btnSignUpClicked(_ sender: UIButton) {
+        
+        if let signupVC = self.storyboard?.instantiateViewController(identifier: "SignUpTableViewController") as? SignUpTableViewController{
+            self.navigationController?.pushViewController(signupVC, animated: true)
+        }
+    }
+}
+    
+extension LoginTableViewController {
+    fileprivate func Validation() {
         if let email = txtEmail.text, let password = txtPassword.text {
             if !email.validateEmail(){
-                openAlert(title: "Alert", message: "Email not", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                openAlert(title: "Alert", message: "Please valid Email address..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                     print("oky clicked!")
                 }])
             } else if !password.validatePassword(){
-                openAlert(title: "Alert", message: "password not", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                openAlert(title: "Alert", message: "Please valid Password..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                     print("oky clicked!")
                 }])
             }else {
                 
             }
         }else {
-            openAlert(title: "Alert", message: "detail not", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+            openAlert(title: "Alert", message: "Please add Details..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                 print("oky clicked!")
             }])
         }
     }
-    
-    }
-    
-    
+}
 
 
 
