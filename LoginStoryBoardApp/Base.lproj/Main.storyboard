@@ -300,11 +300,11 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="imgProfile" destination="EhW-G4-R9i" id="ge7-vf-9O2"/>
-                        <outlet property="txtConfirmPassword" destination="78u-GA-tR1" id="jqE-Nk-H1D"/>
-                        <outlet property="txtEmail" destination="9BZ-4l-LOn" id="iWm-U7-p4c"/>
-                        <outlet property="txtPassword" destination="JAd-rd-TaA" id="UvV-BP-yDb"/>
-                        <outlet property="txtUsername" destination="fcE-Zj-7Xz" id="1Z1-Ms-h73"/>
+                        <outlet property="imgProfile" destination="EhW-G4-R9i" id="1rs-6S-G9H"/>
+                        <outlet property="txtConfirmPassword" destination="sBr-Yg-gij" id="4bU-it-DVZ"/>
+                        <outlet property="txtEmail" destination="ZA3-Tq-2rT" id="cnc-0I-Ht1"/>
+                        <outlet property="txtPassword" destination="IfN-BS-7UZ" id="nHQ-EC-bwl"/>
+                        <outlet property="txtUsername" destination="3Ve-Ve-e91" id="A3O-Jp-QM3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAr-s9-don" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

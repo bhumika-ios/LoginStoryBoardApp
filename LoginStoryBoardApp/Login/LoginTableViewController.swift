@@ -9,8 +9,6 @@ import UIKit
 
 class LoginTableViewController: UITableViewController {
     @IBOutlet weak var txtEmail: UITextField!
-    
-    
     @IBOutlet weak var txtPassword: UITextField!
     
     override func viewDidLoad() {

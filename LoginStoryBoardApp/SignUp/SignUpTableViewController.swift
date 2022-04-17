@@ -10,10 +10,10 @@ import UIKit
 class SignUpTableViewController: UITableViewController {
  
     @IBOutlet weak var imgProfile: UIImageView!
-    @IBOutlet weak var txtUsername: UILabel!
-    @IBOutlet weak var txtEmail: UILabel!
-    @IBOutlet weak var txtPassword: UILabel!
-    @IBOutlet weak var txtConfirmPassword: UILabel!
+    @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtConfirmPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
             
@@ -26,7 +26,46 @@ class SignUpTableViewController: UITableViewController {
         openGallery()
     }
     @IBAction func btnSignup(_ sender: UIButton) {
-    }
+        
+        let imgSystem = UIImage(systemName: "person.crop.circle.badge.plus")
+        
+        if imgProfile.image?.pngData() != imgSystem?.pngData() {
+            if
+                let username = txtUsername.text,
+                let email = txtEmail.text,
+                let password = txtPassword.text,
+                let conPassword = txtConfirmPassword.text{
+                if !email.validateEmail(){
+                    openAlert(title: "Alert", message: "Please valid Email address..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                        print("oky clicked!")
+                    }])
+                } else if username == ""{
+                    openAlert(title: "Alert", message: "Please valid username address..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                                            print("oky clicked!")
+                                        }])
+                   
+                }  else if !password.validatePassword(){
+                    print("password is not valid")
+                }else{
+                    if conPassword == ""{
+                        print("please confirm password")
+                    }else{
+                        if password == conPassword{
+                            print("navigation code")
+                        }else{
+                            print("password does not match")
+                        }
+                    }
+                }
+            }else{
+                print("please check detail")
+            }
+               
+       
+         }else{
+           print("please select profile pic")
+      }
+  }
     @IBAction func btnLoginClicked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
        
