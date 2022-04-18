@@ -24,8 +24,21 @@ class LoginTableViewController: UITableViewController {
         
         Validation()
     }
-    @IBAction func btnSignUpClicked(_ sender: UIButton) {
+    
+
+  
         
+    @IBAction func btnForgotPassClicked(_ sender: UIButton) {
+        if let forgotVC = self.storyboard?.instantiateViewController(identifier: "ForgotPasswordTableViewController") as? ForgotPasswordTableViewController{
+            self.navigationController?.pushViewController(forgotVC, animated: true)
+        }
+    }
+    
+    
+
+    
+    @IBAction func btnSignUpClicked(_ sender: UIButton) {
+
         if let signupVC = self.storyboard?.instantiateViewController(identifier: "SignUpTableViewController") as? SignUpTableViewController{
             self.navigationController?.pushViewController(signupVC, animated: true)
         }

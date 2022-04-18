@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */; };
+		AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */; };
 		ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */; };
 		ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D028095F7600F057E7 /* AppDelegate.swift */; };
 		ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D228095F7600F057E7 /* SceneDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
+		AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenTableTableViewController.swift; sourceTree = "<group>"; };
 		ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		ACEB58CD28095F7600F057E7 /* LoginStoryBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginStoryBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB58D028095F7600F057E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				ACEB58E42809611700F057E7 /* LoginTableViewController.swift */,
+				AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 				ACEB58E6280981EA00F057E7 /* Extension */,
 				ACA1C5F9280AA326008247B9 /* SignUp */,
 				ACEB58D228095F7600F057E7 /* SceneDelegate.swift */,
+				AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */,
 				ACEB58D628095F7600F057E7 /* Main.storyboard */,
 				ACEB58D928095F7600F057E7 /* Assets.xcassets */,
 				ACEB58DB28095F7600F057E7 /* LaunchScreen.storyboard */,
@@ -175,7 +181,9 @@
 				ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */,
 				ACEB58EC2809893D00F057E7 /* UIAlertController + Extension.swift in Sources */,
 				ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */,
+				AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */,
 				ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */,
+				AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */,
 				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
