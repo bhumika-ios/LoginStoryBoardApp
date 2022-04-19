@@ -14,15 +14,19 @@ class ForgotPasswordTableViewController: UITableViewController {
        
     }
     @IBAction func btnSendOTPClicked(_ sender: UIButton) {
-       
+            emailValidation()
+            if let sendVC = self.storyboard?.instantiateViewController(identifier: "OTPScreenTableTableViewController") as? OTPScreenTableTableViewController{
+            self.navigationController?.pushViewController(sendVC, animated: true)
+        }
+        
+    }
+    func emailValidation(){
         if let email = txtEmail.text{
             if !email.validateEmail(){
                 openAlert(title: "Alert", message: "Enter valid email", alertStyle: .alert, actionTitles: ["ok"], actionStyles: [.default], actions: [{_ in }])
             }
-        }else if let sendVC = self.storyboard?.instantiateViewController(identifier: "OTPScreenTableTableViewController") as? OTPScreenTableTableViewController{
-            self.navigationController?.pushViewController(sendVC, animated: true)
         }
-       
     }
 }
+
 
