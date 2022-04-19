@@ -28,4 +28,16 @@ extension String {
         let isValidateOtherString = validateOtherString.evaluate(with: trimmedString)
         return isValidateOtherString
     }
+    
+    func validateVeryfy(mini: Int = 4, max: Int = 6) -> Bool {
+//        var veryRegEx = ""
+//        if mini == max {
+//            veryRegEx = "^(?=.*[0-9])(?=.*\\d)[0-9\\d]{\(mini),}$"
+//        } else {
+//            veryRegEx = "^(?=.*[0-9])(?=.*\\d)[0-9\\d]{\(mini),\(max)}$"
+//        }
+        return applyPredicateOnRegex(regexStr: "^(?=.*[0-9])(?=.*\\d)[0-9\\d]{\(4),\(6)}$")
+        
+    }
+    
 }
