@@ -88,13 +88,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kXB-ZA-8OQ" userLabel="Account">
                                                     <rect key="frame" x="73" y="780.5" width="268.5" height="35.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dont't have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-Te-34p">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont't have Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-Te-34p">
                                                             <rect key="frame" x="0.0" y="0.0" width="169.5" height="35.5"/>
                                                             <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-TK-FId">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-TK-FId">
                                                             <rect key="frame" x="174.5" y="0.0" width="94" height="35.5"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="SignUp">
@@ -203,6 +203,16 @@
                                                         <action selector="btnSendOTPClicked:" destination="vvg-Zc-aib" eventType="touchUpInside" id="bJx-t5-EqJ"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOG-07-c7c">
+                                                    <rect key="frame" x="0.0" y="-12" width="59" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" systemColor="linkColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=""/>
+                                                    <connections>
+                                                        <action selector="btnBackClick:" destination="vvg-Zc-aib" eventType="touchUpInside" id="0gZ-v1-cTw"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qRc-Zm-zc9" firstAttribute="leading" secondItem="vmy-s4-hR5" secondAttribute="leading" id="2DE-v2-ihn"/>
@@ -232,7 +242,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhD-K6-5WF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1206" y="-79"/>
+            <point key="canvasLocation" x="1205.7971014492755" y="-79.017857142857139"/>
         </scene>
         <!--Screen Table Table View Controller-->
         <scene sceneID="xV1-5K-GLs">
@@ -252,6 +262,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veryfication Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFd-5Y-Tcg">
+                                                    <rect key="frame" x="30" y="279" width="354" height="27.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAN-Gl-nv6">
                                                     <rect key="frame" x="30" y="428" width="354" height="42"/>
                                                     <state key="normal" title="Button"/>
@@ -275,12 +291,15 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veryfication Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFd-5Y-Tcg">
-                                                    <rect key="frame" x="30" y="279" width="354" height="27.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYL-dQ-Cti">
+                                                    <rect key="frame" x="-14" y="-25" width="85" height="86"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="btnBackOTPClicked:" destination="iYW-Ev-fcm" eventType="touchUpInside" id="Lm6-tF-Wmh"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="NSC-yj-oY7" firstAttribute="leading" secondItem="kn6-Ga-WtI" secondAttribute="leading" constant="30" id="0L6-rG-CQ3"/>
@@ -312,7 +331,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdL-iE-LnL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-79"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="-79.017857142857139"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Pvv-fd-5Zw">
+            <objects>
+                <tableViewController id="Qut-26-vXd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hkq-wh-yv9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYc-he-3J7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="-60"/>
         </scene>
         <!--Sign Up Table View Controller-->
         <scene sceneID="SKT-Nc-2dM">
@@ -505,10 +534,15 @@
     </scenes>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

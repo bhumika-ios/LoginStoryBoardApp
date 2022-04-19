@@ -14,5 +14,8 @@ class OTPScreenTableTableViewController: UITableViewController {
 
     }
 
-
+    @IBAction func btnBackOTPClicked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

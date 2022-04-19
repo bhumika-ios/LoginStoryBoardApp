@@ -20,6 +20,9 @@ class ForgotPasswordTableViewController: UITableViewController {
         }
         
     }
+    @IBAction func btnBackClick(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
     func emailValidation(){
         if let email = txtEmail.text{
             if !email.validateEmail(){
