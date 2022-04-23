@@ -31,7 +31,7 @@ class SignUpTableViewController: UITableViewController {
         
         if imgProfile.image?.pngData() != imgSystem?.pngData() {
             if
-                let username = txtUsername.text,
+                let username = txtUsername.text ,
                 let email = txtEmail.text,
                 let password = txtPassword.text,
                 let conPassword = txtConfirmPassword.text{
@@ -65,6 +65,8 @@ class SignUpTableViewController: UITableViewController {
          }else{
            print("please select profile pic")
       }
+        DataBase()
+        
   }
     @IBAction func btnLoginClicked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -86,5 +88,15 @@ extension SignUpTableViewController: UINavigationControllerDelegate, UIImagePick
             imgProfile.image = img
         }
         dismiss(animated: true)
+    }
+}
+extension SignUpTableViewController{
+    
+    func DataBase(){
+        guard let username = self.txtUsername.text else { return }
+        guard let email = self.txtEmail.text else { return }
+        guard let password = self.txtPassword.text else { return }
+        let register = RegisterModel(username: username, email: email, password: password)
+        ApiManager.shareInstance.callingregisterAPI(register: register)
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDA9280FE6420093E1C7 /* APIViewController.swift */; };
+		AC63BDAD281011300093E1C7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAC281011300093E1C7 /* Constant.swift */; };
+		AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAE281015950093E1C7 /* RegisterModel.swift */; };
+		AC63BDB1281016360093E1C7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDB0281016360093E1C7 /* ApiManager.swift */; };
 		AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */; };
 		AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */; };
 		ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */; };
@@ -18,9 +22,14 @@
 		ACEB58E52809611700F057E7 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58E42809611700F057E7 /* LoginTableViewController.swift */; };
 		ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58E72809821600F057E7 /* String + Extension.swift */; };
 		ACEB58EC2809893D00F057E7 /* UIAlertController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58EB2809893D00F057E7 /* UIAlertController + Extension.swift */; };
+		ACF5367A28101B4300365900 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ACF5367928101B4300365900 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC63BDA9280FE6420093E1C7 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
+		AC63BDAC281011300093E1C7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AC63BDAE281015950093E1C7 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		AC63BDB0281016360093E1C7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
 		AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenTableTableViewController.swift; sourceTree = "<group>"; };
 		ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
@@ -41,12 +50,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF5367A28101B4300365900 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC63BDAB281010FA0093E1C7 /* AuthApi */ = {
+			isa = PBXGroup;
+			children = (
+				AC63BDAC281011300093E1C7 /* Constant.swift */,
+				AC63BDAE281015950093E1C7 /* RegisterModel.swift */,
+				AC63BDB0281016360093E1C7 /* ApiManager.swift */,
+			);
+			path = AuthApi;
+			sourceTree = "<group>";
+		};
 		ACA1C5F7280AA307008247B9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +87,7 @@
 		ACEB58C428095F7600F057E7 = {
 			isa = PBXGroup;
 			children = (
+				AC63BDAB281010FA0093E1C7 /* AuthApi */,
 				ACEB58CF28095F7600F057E7 /* LoginStoryBoardApp */,
 				ACEB58CE28095F7600F057E7 /* Products */,
 			);
@@ -92,6 +113,7 @@
 				ACEB58D628095F7600F057E7 /* Main.storyboard */,
 				ACEB58D928095F7600F057E7 /* Assets.xcassets */,
 				ACEB58DB28095F7600F057E7 /* LaunchScreen.storyboard */,
+				AC63BDA9280FE6420093E1C7 /* APIViewController.swift */,
 				ACEB58DE28095F7600F057E7 /* Info.plist */,
 			);
 			path = LoginStoryBoardApp;
@@ -122,6 +144,9 @@
 			dependencies = (
 			);
 			name = LoginStoryBoardApp;
+			packageProductDependencies = (
+				ACF5367928101B4300365900 /* Alamofire */,
+			);
 			productName = LoginStoryBoardApp;
 			productReference = ACEB58CD28095F7600F057E7 /* LoginStoryBoardApp.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +175,9 @@
 				Base,
 			);
 			mainGroup = ACEB58C428095F7600F057E7;
+			packageReferences = (
+				ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ACEB58CE28095F7600F057E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,10 +209,14 @@
 				ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */,
 				ACEB58EC2809893D00F057E7 /* UIAlertController + Extension.swift in Sources */,
 				ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */,
+				AC63BDB1281016360093E1C7 /* ApiManager.swift in Sources */,
 				AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */,
 				ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */,
+				AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */,
 				AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */,
+				AC63BDAD281011300093E1C7 /* Constant.swift in Sources */,
 				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
+				AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACF5367928101B4300365900 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACEB58C528095F7600F057E7 /* Project object */;
 }
