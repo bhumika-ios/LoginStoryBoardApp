@@ -8,12 +8,13 @@
 import UIKit
 
 class SignUpTableViewController: UITableViewController {
- 
+    
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             
@@ -97,6 +98,17 @@ extension SignUpTableViewController{
         guard let email = self.txtEmail.text else { return }
         guard let password = self.txtPassword.text else { return }
         let register = RegisterModel(username: username, email: email, password: password)
-        ApiManager.shareInstance.callingregisterAPI(register: register)
+        ApiManager.shareInstance.callingregisterAPI(register: register) {
+            (isSuccess) in
+            if isSuccess{
+                self.openAlert(title: "Alert", message: "Successfully", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                    print("oky clicked!")
+                }])
+            }else{
+                self.openAlert(title: "Alert", message: "try Again", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                    print("oky clicked!")
+            }])
+          }
+        }
     }
 }

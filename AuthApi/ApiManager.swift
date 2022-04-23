@@ -11,7 +11,7 @@ import Alamofire
 class ApiManager{
     static let shareInstance = ApiManager()
     
-    func callingregisterAPI(register: RegisterModel){
+    func callingregisterAPI(register: RegisterModel, completionHandler: @escaping (Bool) -> ()){
         let headers: HTTPHeaders = [
             .contentType("application/json")
         ]
@@ -20,14 +20,21 @@ class ApiManager{
             switch response.result{
             case.success(let data):
                 do{
-                    let json = try JSONSerialization.jsonObject(with: data!, options: [])
-                    print(json)
+                    let json = try
+                    JSONSerialization.jsonObject(with: data!, options: [])
+                    if response.response?.statusCode == 200{
+                        completionHandler(true)
+                    }else{
+                        completionHandler(false)
+                    }
                     
                 }catch{
                     print(error.localizedDescription)
+                    completionHandler(false)
                 }
             case.failure(let err):
                 print(err.localizedDescription)
+                completionHandler(false)
             }
             
         }
