@@ -11,4 +11,5 @@ struct RegisterModel: Encodable{
     let username: String
     let email: String
     let password: String
+    let password1 = "hello"
 }

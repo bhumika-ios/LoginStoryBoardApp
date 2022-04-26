@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class LoginTableViewController: UITableViewController {
     @IBOutlet weak var txtEmail: UITextField!
@@ -22,7 +23,8 @@ class LoginTableViewController: UITableViewController {
     
     @IBAction func btnLoginClicked(_ sender: UIButton) {
         
-        Validation()
+       // Validation()
+        DataBase()
     }
     
 
@@ -63,6 +65,24 @@ extension LoginTableViewController {
             openAlert(title: "Alert", message: "Please add Details..", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                 print("oky clicked!")
             }])
+        }
+    }
+    func DataBase(){
+        guard let username = self.txtEmail.text else { return }
+        guard let password = self.txtPassword.text else { return }
+        let register = OAuthModel(username: username, password: password)
+        OAuthManager.shareInstance.callingoauthAPI(register: register) {
+        //OAuthManager.shareInstance.callingregisterAPI(register: register) {
+            (isSuccess, str) in
+            if isSuccess{
+                self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                    print("oky clicked!")
+                }])
+            }else{
+                self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                    print("oky clicked!")
+            }])
+          }
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CB775BBF057CA71A962975A /* Pods_LoginStoryBoardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC966435E128268C6020F90 /* Pods_LoginStoryBoardApp.framework */; };
 		AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDA9280FE6420093E1C7 /* APIViewController.swift */; };
 		AC63BDAD281011300093E1C7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAC281011300093E1C7 /* Constant.swift */; };
 		AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAE281015950093E1C7 /* RegisterModel.swift */; };
@@ -14,6 +15,8 @@
 		AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */; };
 		AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */; };
 		ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */; };
+		ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14C2817F05A003612F5 /* OAuthManager.swift */; };
+		ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14E2817F369003612F5 /* OAuthModel.swift */; };
 		ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D028095F7600F057E7 /* AppDelegate.swift */; };
 		ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D228095F7600F057E7 /* SceneDelegate.swift */; };
 		ACEB58D828095F7600F057E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB58D628095F7600F057E7 /* Main.storyboard */; };
@@ -26,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41106095A7B257528321CB42 /* Pods-LoginStoryBoardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginStoryBoardApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AC63BDA9280FE6420093E1C7 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
 		AC63BDAC281011300093E1C7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AC63BDAE281015950093E1C7 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
 		AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenTableTableViewController.swift; sourceTree = "<group>"; };
 		ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		ACE1C14C2817F05A003612F5 /* OAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
+		ACE1C14E2817F369003612F5 /* OAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthModel.swift; sourceTree = "<group>"; };
 		ACEB58CD28095F7600F057E7 /* LoginStoryBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginStoryBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB58D028095F7600F057E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACEB58D228095F7600F057E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,8 @@
 		ACEB58E42809611700F057E7 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		ACEB58E72809821600F057E7 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		ACEB58EB2809893D00F057E7 /* UIAlertController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController + Extension.swift"; sourceTree = "<group>"; };
+		CDC966435E128268C6020F90 /* Pods_LoginStoryBoardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginStoryBoardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB14DB0B07558B03E481735 /* Pods-LoginStoryBoardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginStoryBoardApp.release.xcconfig"; path = "Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +59,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF5367A28101B4300365900 /* Alamofire in Frameworks */,
+				8CB775BBF057CA71A962975A /* Pods_LoginStoryBoardApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		249C092586FF28E1D1E45205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC966435E128268C6020F90 /* Pods_LoginStoryBoardApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC63BDAB281010FA0093E1C7 /* AuthApi */ = {
 			isa = PBXGroup;
 			children = (
 				AC63BDAC281011300093E1C7 /* Constant.swift */,
 				AC63BDAE281015950093E1C7 /* RegisterModel.swift */,
 				AC63BDB0281016360093E1C7 /* ApiManager.swift */,
+				ACE1C14C2817F05A003612F5 /* OAuthManager.swift */,
+				ACE1C14E2817F369003612F5 /* OAuthModel.swift */,
 			);
 			path = AuthApi;
 			sourceTree = "<group>";
@@ -90,6 +109,8 @@
 				AC63BDAB281010FA0093E1C7 /* AuthApi */,
 				ACEB58CF28095F7600F057E7 /* LoginStoryBoardApp */,
 				ACEB58CE28095F7600F057E7 /* Products */,
+				B95D57D95C4D52425FF04689 /* Pods */,
+				249C092586FF28E1D1E45205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +149,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		B95D57D95C4D52425FF04689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41106095A7B257528321CB42 /* Pods-LoginStoryBoardApp.debug.xcconfig */,
+				DBB14DB0B07558B03E481735 /* Pods-LoginStoryBoardApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACEB58E128095F7600F057E7 /* Build configuration list for PBXNativeTarget "LoginStoryBoardApp" */;
 			buildPhases = (
+				8B522479F13104CD36966F57 /* [CP] Check Pods Manifest.lock */,
 				ACEB58C928095F7600F057E7 /* Sources */,
 				ACEB58CA28095F7600F057E7 /* Frameworks */,
 				ACEB58CB28095F7600F057E7 /* Resources */,
+				54F6C908018F9D353BDD65C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +209,7 @@
 			);
 			mainGroup = ACEB58C428095F7600F057E7;
 			packageReferences = (
-				ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = ACEB58CE28095F7600F057E7 /* Products */;
 			projectDirPath = "";
@@ -200,6 +233,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54F6C908018F9D353BDD65C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B522479F13104CD36966F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginStoryBoardApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACEB58C928095F7600F057E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,11 +287,13 @@
 				AC63BDB1281016360093E1C7 /* ApiManager.swift in Sources */,
 				AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */,
 				ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */,
+				ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */,
 				AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */,
 				AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */,
 				AC63BDAD281011300093E1C7 /* Constant.swift in Sources */,
 				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
 				AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */,
+				ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +435,7 @@
 		};
 		ACEB58E228095F7600F057E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41106095A7B257528321CB42 /* Pods-LoginStoryBoardApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +464,7 @@
 		};
 		ACEB58E328095F7600F057E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB14DB0B07558B03E481735 /* Pods-LoginStoryBoardApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,7 +515,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -449,7 +528,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		ACF5367928101B4300365900 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
