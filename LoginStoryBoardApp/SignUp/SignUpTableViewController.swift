@@ -99,13 +99,13 @@ extension SignUpTableViewController{
         guard let password = self.txtPassword.text else { return }
         let register = RegisterModel(username: username, email: email, password: password)
         ApiManager.shareInstance.callingregisterAPI(register: register) {
-            (isSuccess) in
+            (isSuccess, str) in
             if isSuccess{
-                self.openAlert(title: "Alert", message: "Successfully", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                     print("oky clicked!")
                 }])
             }else{
-                self.openAlert(title: "Alert", message: "try Again", alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
+                self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
                     print("oky clicked!")
             }])
           }
