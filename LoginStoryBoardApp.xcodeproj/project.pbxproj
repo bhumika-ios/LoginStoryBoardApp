@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CB775BBF057CA71A962975A /* Pods_LoginStoryBoardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC966435E128268C6020F90 /* Pods_LoginStoryBoardApp.framework */; };
+		AC228587281AAADA0036EA78 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC228586281AAADA0036EA78 /* HomeTableViewController.swift */; };
 		AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDA9280FE6420093E1C7 /* APIViewController.swift */; };
 		AC63BDAD281011300093E1C7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAC281011300093E1C7 /* Constant.swift */; };
 		AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDAE281015950093E1C7 /* RegisterModel.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		41106095A7B257528321CB42 /* Pods-LoginStoryBoardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginStoryBoardApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginStoryBoardApp/Pods-LoginStoryBoardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AC228586281AAADA0036EA78 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		AC63BDA9280FE6420093E1C7 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
 		AC63BDAC281011300093E1C7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AC63BDAE281015950093E1C7 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				ACEB58E42809611700F057E7 /* LoginTableViewController.swift */,
 				AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */,
+				AC228586281AAADA0036EA78 /* HomeTableViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -155,7 +158,6 @@
 				41106095A7B257528321CB42 /* Pods-LoginStoryBoardApp.debug.xcconfig */,
 				DBB14DB0B07558B03E481735 /* Pods-LoginStoryBoardApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +211,7 @@
 			);
 			mainGroup = ACEB58C428095F7600F057E7;
 			packageReferences = (
-				ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = ACEB58CE28095F7600F057E7 /* Products */;
 			projectDirPath = "";
@@ -289,6 +291,7 @@
 				ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */,
 				ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */,
 				AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */,
+				AC228587281AAADA0036EA78 /* HomeTableViewController.swift in Sources */,
 				AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */,
 				AC63BDAD281011300093E1C7 /* Constant.swift in Sources */,
 				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
@@ -515,7 +518,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -528,7 +531,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		ACF5367928101B4300365900 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = ACF5367828101B4300365900 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
