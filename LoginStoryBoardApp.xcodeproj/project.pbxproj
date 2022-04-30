@@ -23,7 +23,6 @@
 		ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14C2817F05A003612F5 /* OAuthManager.swift */; };
 		ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14E2817F369003612F5 /* OAuthModel.swift */; };
 		ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D028095F7600F057E7 /* AppDelegate.swift */; };
-		ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D228095F7600F057E7 /* SceneDelegate.swift */; };
 		ACEB58D828095F7600F057E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB58D628095F7600F057E7 /* Main.storyboard */; };
 		ACEB58DA28095F7600F057E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEB58D928095F7600F057E7 /* Assets.xcassets */; };
 		ACEB58DD28095F7600F057E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB58DB28095F7600F057E7 /* LaunchScreen.storyboard */; };
@@ -51,7 +50,6 @@
 		ACE1C14E2817F369003612F5 /* OAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthModel.swift; sourceTree = "<group>"; };
 		ACEB58CD28095F7600F057E7 /* LoginStoryBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginStoryBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB58D028095F7600F057E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACEB58D228095F7600F057E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACEB58D728095F7600F057E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACEB58D928095F7600F057E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACEB58DC28095F7600F057E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,10 +157,9 @@
 				ACA1C5F7280AA307008247B9 /* Login */,
 				ACEB58E6280981EA00F057E7 /* Extension */,
 				ACA1C5F9280AA326008247B9 /* SignUp */,
-				ACEB58D228095F7600F057E7 /* SceneDelegate.swift */,
 				AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */,
-				ACEB58D628095F7600F057E7 /* Main.storyboard */,
 				ACEB58D928095F7600F057E7 /* Assets.xcassets */,
+				ACEB58D628095F7600F057E7 /* Main.storyboard */,
 				ACEB58DB28095F7600F057E7 /* LaunchScreen.storyboard */,
 				AC63BDA9280FE6420093E1C7 /* APIViewController.swift */,
 				ACEB58DE28095F7600F057E7 /* Info.plist */,
@@ -324,7 +321,6 @@
 				AC8D87A9281D339C0018B686 /* UIViewController + Extension.swift in Sources */,
 				AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */,
 				AC63BDAD281011300093E1C7 /* Constant.swift in Sources */,
-				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
 				AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */,
 				ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */,
 				AC8D87A2281D22A10018B686 /* TokenService.swift in Sources */,
