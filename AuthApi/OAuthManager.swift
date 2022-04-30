@@ -23,11 +23,11 @@ class OAuthManager{
                 do{
                     let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
                     if response.response?.statusCode == 200    {
-                    if let parseJSON = json {
-                        let accessToken = parseJSON["token_type"] as? String
-                        print("accessToken:\(accessToken)")
-                        let saveAccessToken: Bool = KeychainWrapper.standard.set(accessToken!, forKey: "accessToken")
-                        print("The access token save result: \(saveAccessToken)")
+                        if let parseJSON = json{
+                            let accessToken = parseJSON["token_type"] as? String
+                            print("accessToken:\(accessToken)")
+                            let saveAccessToken: Bool = KeychainWrapper.standard.set(accessToken!, forKey: "accessToken")
+                            print("The access token save result: \(saveAccessToken)")
 //                        if (accessToken?.isEmpty)!
 //                        {
 //                            self.displayMessage(userMessage: "try again")

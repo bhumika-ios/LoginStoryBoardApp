@@ -15,6 +15,7 @@
 		AC63BDB1281016360093E1C7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63BDB0281016360093E1C7 /* ApiManager.swift */; };
 		AC69EB07280D3F2000453C5B /* ForgotPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */; };
 		AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */; };
+		AC8D87A2281D22A10018B686 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D87A1281D22A10018B686 /* TokenService.swift */; };
 		ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */; };
 		ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14C2817F05A003612F5 /* OAuthManager.swift */; };
 		ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14E2817F369003612F5 /* OAuthModel.swift */; };
@@ -38,6 +39,7 @@
 		AC63BDB0281016360093E1C7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AC69EB06280D3F2000453C5B /* ForgotPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTableViewController.swift; sourceTree = "<group>"; };
 		AC69EB08280D816D00453C5B /* OTPScreenTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreenTableTableViewController.swift; sourceTree = "<group>"; };
+		AC8D87A1281D22A10018B686 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 		ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		ACE1C14C2817F05A003612F5 /* OAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
 		ACE1C14E2817F369003612F5 /* OAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthModel.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = AuthApi;
 			sourceTree = "<group>";
 		};
+		AC8D87A0281D225B0018B686 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D87A1281D22A10018B686 /* TokenService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		ACA1C5F7280AA307008247B9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		ACEB58C428095F7600F057E7 = {
 			isa = PBXGroup;
 			children = (
+				AC8D87A0281D225B0018B686 /* Services */,
 				AC63BDAB281010FA0093E1C7 /* AuthApi */,
 				ACEB58CF28095F7600F057E7 /* LoginStoryBoardApp */,
 				ACEB58CE28095F7600F057E7 /* Products */,
@@ -297,6 +308,7 @@
 				ACEB58D328095F7600F057E7 /* SceneDelegate.swift in Sources */,
 				AC63BDAA280FE6420093E1C7 /* APIViewController.swift in Sources */,
 				ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */,
+				AC8D87A2281D22A10018B686 /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

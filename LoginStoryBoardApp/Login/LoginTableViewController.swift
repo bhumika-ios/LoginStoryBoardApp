@@ -82,6 +82,10 @@ extension LoginTableViewController {
                     homeVC.strName = username
                     self.navigationController?.pushViewController(homeVC, animated: true)
                 }
+//                if let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeTableViewController") as? HomeTableViewController{
+//                    homeVC.strName = username
+//                    self.navigationController?.pushViewController(homeVC, animated: true)
+//                }
                 
             }else{
                 self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in

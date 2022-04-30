@@ -17,9 +17,15 @@ class HomeTableViewController: UITableViewController {
 
       
     }
-    @IBAction func btnBack2Clicked(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func btnLogOutclicked(_ sender: UIButton) {
+        TokenService.tokenInstance.removeToken()
+        self.navigationController?.popToRootViewController(animated: true)
     }
+    //    @IBAction func btnBack2Clicked(_ sender: UIButton) {
+//        self.navigationController?.popViewController(animated: true)
+//    }
+    
+   
 }
 //extension HomeTableViewController{
 //    static func shareInstance() -> HomeTableViewController{

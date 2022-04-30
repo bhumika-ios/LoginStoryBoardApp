@@ -15,3 +15,8 @@ let login_url = "\(base_url)login"
 
 let base_url2 = "https://demopanel.laraveldeveloper.online"
 let oauth_url = "\(base_url2)/oauth/token"
+
+
+struct Tokenkey{
+    static let userLogin = "USER_LOGIN_KEY"
+}
