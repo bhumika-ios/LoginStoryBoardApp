@@ -363,14 +363,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3u-cl-bdz">
-                                                    <rect key="frame" x="0.0" y="1" width="89" height="42"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
-                                                    <connections>
-                                                        <action selector="btnBack2Clicked:" destination="Amw-3l-Dia" eventType="touchUpInside" id="07G-U6-Wbt"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pk-z3-W68">
                                                     <rect key="frame" x="293" y="1" width="112" height="31"/>
                                                     <state key="normal" title="Button"/>
@@ -382,17 +374,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="nb0-wO-TsX" firstAttribute="top" secondItem="jUh-g8-Fzm" secondAttribute="top" constant="290" id="00z-Ar-kZL"/>
-                                                <constraint firstItem="nb0-wO-TsX" firstAttribute="top" secondItem="v3u-cl-bdz" secondAttribute="bottom" constant="247" id="1ev-oi-j26"/>
                                                 <constraint firstAttribute="trailing" secondItem="1pk-z3-W68" secondAttribute="trailing" constant="10" id="EIg-Pj-yX8"/>
-                                                <constraint firstItem="1pk-z3-W68" firstAttribute="height" secondItem="v3u-cl-bdz" secondAttribute="height" multiplier="0.738095" id="Fm3-BV-Fxk"/>
-                                                <constraint firstItem="1pk-z3-W68" firstAttribute="leading" secondItem="v3u-cl-bdz" secondAttribute="trailing" constant="203" id="SSX-mR-uBs"/>
-                                                <constraint firstItem="v3u-cl-bdz" firstAttribute="top" secondItem="jUh-g8-Fzm" secondAttribute="top" constant="1" id="Tp4-hP-kuU"/>
                                                 <constraint firstItem="1pk-z3-W68" firstAttribute="leading" secondItem="jUh-g8-Fzm" secondAttribute="leading" constant="292" id="aHx-FA-DOH"/>
                                                 <constraint firstAttribute="trailing" secondItem="nb0-wO-TsX" secondAttribute="trailing" constant="30" id="dLK-um-VfN"/>
                                                 <constraint firstAttribute="bottom" secondItem="nb0-wO-TsX" secondAttribute="bottom" constant="386" id="fpA-GR-WrW"/>
-                                                <constraint firstItem="1pk-z3-W68" firstAttribute="width" secondItem="v3u-cl-bdz" secondAttribute="width" multiplier="1.25843" id="mAe-2s-88o"/>
                                                 <constraint firstItem="nb0-wO-TsX" firstAttribute="leading" secondItem="jUh-g8-Fzm" secondAttribute="leading" constant="30" id="vge-1n-drj"/>
-                                                <constraint firstItem="v3u-cl-bdz" firstAttribute="leading" secondItem="jUh-g8-Fzm" secondAttribute="leading" id="ytx-cg-oIQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

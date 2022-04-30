@@ -75,17 +75,18 @@ extension LoginTableViewController {
         //OAuthManager.shareInstance.callingregisterAPI(register: register) {
             (isSuccess, str) in
             if isSuccess{
+                
+                let dashboardVC = DashboardViewController.shareInstance()
+                dashboardVC.strName = username
+                self.navigationController?.pushViewController(dashboardVC, animated: true)
 //                self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
 //                    print("oky clicked!")
 //                }])
-                if let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeTableViewController") as? HomeTableViewController{
-                    homeVC.strName = username
-                    self.navigationController?.pushViewController(homeVC, animated: true)
-                }
 //                if let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeTableViewController") as? HomeTableViewController{
 //                    homeVC.strName = username
 //                    self.navigationController?.pushViewController(homeVC, animated: true)
 //                }
+
                 
             }else{
                 self.openAlert(title: "Alert", message: str, alertStyle: .alert, actionTitles: ["oky"], actionStyles: [.default], actions: [{ _ in
