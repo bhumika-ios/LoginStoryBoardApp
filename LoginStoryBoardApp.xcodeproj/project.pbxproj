@@ -20,6 +20,7 @@
 		AC8D87A7281D30AC0018B686 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D87A6281D30AC0018B686 /* DashboardViewController.swift */; };
 		AC8D87A9281D339C0018B686 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D87A8281D339C0018B686 /* UIViewController + Extension.swift */; };
 		ACA1C5FB280AA362008247B9 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */; };
+		ACAD1CEA28952CD7009F0755 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD1CE928952CD7009F0755 /* GradientView.swift */; };
 		ACE1C14D2817F05A003612F5 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14C2817F05A003612F5 /* OAuthManager.swift */; };
 		ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1C14E2817F369003612F5 /* OAuthModel.swift */; };
 		ACEB58D128095F7600F057E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58D028095F7600F057E7 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		AC8D87A6281D30AC0018B686 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		AC8D87A8281D339C0018B686 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		ACA1C5FA280AA362008247B9 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		ACAD1CE928952CD7009F0755 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GradientView.swift; sourceTree = "<group>"; };
 		ACE1C14C2817F05A003612F5 /* OAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
 		ACE1C14E2817F369003612F5 /* OAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthModel.swift; sourceTree = "<group>"; };
 		ACEB58CD28095F7600F057E7 /* LoginStoryBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginStoryBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 		ACEB58C428095F7600F057E7 = {
 			isa = PBXGroup;
 			children = (
+				ACAD1CE928952CD7009F0755 /* GradientView.swift */,
 				AC8D87A3281D30180018B686 /* Dashboard */,
 				AC8D87A0281D225B0018B686 /* Services */,
 				AC63BDAB281010FA0093E1C7 /* AuthApi */,
@@ -316,6 +319,7 @@
 				AC69EB09280D816D00453C5B /* OTPScreenTableTableViewController.swift in Sources */,
 				ACEB58E82809821600F057E7 /* String + Extension.swift in Sources */,
 				ACE1C14F2817F369003612F5 /* OAuthModel.swift in Sources */,
+				ACAD1CEA28952CD7009F0755 /* GradientView.swift in Sources */,
 				AC63BDAF281015950093E1C7 /* RegisterModel.swift in Sources */,
 				AC228587281AAADA0036EA78 /* HomeTableViewController.swift in Sources */,
 				AC8D87A9281D339C0018B686 /* UIViewController + Extension.swift in Sources */,

@@ -8,13 +8,24 @@
 import UIKit
 import SwiftKeychainWrapper
 
+
 class LoginTableViewController: UITableViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    @IBOutlet var bgView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let colorTop = UIColor(red: 0.87, green: 0.37, blue: 0.54, alpha: 1.00).cgColor
+        let colorBottom = UIColor(red: 0.97, green: 0.73, blue: 0.59, alpha: 1.00).cgColor
        
+        let newLayer = CAGradientLayer()
+        newLayer.frame = self.bgView.bounds
+        newLayer.colors = [ colorTop, colorBottom ]
+        
+        
+        self.bgView.layer.insertSublayer(newLayer, at: 0)
     }
     
     
@@ -70,7 +81,7 @@ extension LoginTableViewController {
     func DataBase(){
         guard let username = self.txtEmail.text else { return }
         guard let password = self.txtPassword.text else { return }
-        let register = OAuthModel(username: username, password: password)
+        let register = OAuthModel(email: username, password: password)
         OAuthManager.shareInstance.callingoauthAPI(register: register) {
         //OAuthManager.shareInstance.callingregisterAPI(register: register) {
             (isSuccess, str) in

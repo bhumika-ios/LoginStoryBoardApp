@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
     @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,9 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-                window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-                window?.makeKeyAndVisible()
+        
+        let accessToken: String? = KeychainWrapper.standard.string(forKey: "accessToken")
+        if accessToken != nil {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+                    window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+                    window?.makeKeyAndVisible()
+           
+        }
+       
         // Override point for customization after application launch.
         return true
     }

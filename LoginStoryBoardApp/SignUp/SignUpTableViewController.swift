@@ -15,8 +15,18 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
     
+    @IBOutlet var bgView2: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let colorTop = UIColor(red: 0.87, green: 0.37, blue: 0.54, alpha: 1.00).cgColor
+        let colorBottom = UIColor(red: 0.97, green: 0.73, blue: 0.59, alpha: 1.00).cgColor
+       
+        let newLayer = CAGradientLayer()
+        newLayer.frame = self.bgView2.bounds
+        newLayer.colors = [ colorTop, colorBottom ]
+        
+        
+        self.bgView2.layer.insertSublayer(newLayer, at: 0)
             
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgProfile.addGestureRecognizer(tapGesture)
