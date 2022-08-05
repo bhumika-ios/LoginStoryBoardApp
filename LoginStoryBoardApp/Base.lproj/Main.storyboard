@@ -179,11 +179,11 @@
                         <sections>
                             <tableViewSection id="ghb-jb-EF1">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="726" id="bmP-bx-1l4">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="726"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="751" id="bmP-bx-1l4">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="751"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bmP-bx-1l4" id="KqN-4c-6tf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="751"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLS-bx-rCn">
@@ -250,6 +250,8 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="BgViewforget" destination="bmP-bx-1l4" id="DGO-cJ-7xj"/>
+                        <outlet property="forgetBg" destination="KqN-4c-6tf" id="F99-nq-BbN"/>
                         <outlet property="txtEmail" destination="vmy-s4-hR5" id="EBb-vM-4u5"/>
                     </connections>
                 </tableViewController>

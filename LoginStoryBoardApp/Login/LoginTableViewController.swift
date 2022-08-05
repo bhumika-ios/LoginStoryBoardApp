@@ -10,12 +10,47 @@ import SwiftKeychainWrapper
 
 
 class LoginTableViewController: UITableViewController {
+    
+    var iconClick = false
+    let imageicon = UIImageView()
+    
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    let button = UIButton(type: .custom)
+    
     
     @IBOutlet var bgView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // second code
+//        imageicon.image = UIImage(named: "closedeye")
+//
+//        let contentView = UIView()
+//        contentView.addSubview(imageicon)
+//
+//        contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "closedeye")!.size.width, height: UIImage(named: "closedeye")!.size.height)
+//        imageicon.frame = CGRect(x: -10, y: 0,width: UIImage(named: "closedeye")!.size.width, height: UIImage(named: "closedeye")!.size.height)
+//
+//        txtPassword.rightView = contentView
+//        txtPassword.rightViewMode = .always
+//
+//        let tapGestureRecognizer = UIGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer: )))
+//        imageicon.isUserInteractionEnabled = true
+//        imageicon.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        //firstcode
+        txtPassword.rightViewMode = .unlessEditing
+
+        button.setImage(UIImage(named: "closedeye4"), for: .normal)
+
+       // button.imageEdgeInsets = UIEdgeInsets(top: 5, left: -24, bottom: 5, right: 15)
+        //button.frame = CGRect(x: 0, y: 0, width: UIImage(named: "closedeye")!.size.width, height: UIImage(named: "closedeye")!.size.height)
+        button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 25), y: CGFloat(5), width: CGFloat(15), height: CGFloat(25))
+        button.addTarget(self, action: #selector(self.btnPasswordVisibilityClicked), for: .touchUpInside)
+        txtPassword.rightView = button
+        txtPassword.rightViewMode = .always
+        
         
         let colorTop = UIColor(red: 0.87, green: 0.37, blue: 0.54, alpha: 1.00).cgColor
         let colorBottom = UIColor(red: 0.97, green: 0.73, blue: 0.59, alpha: 1.00).cgColor
@@ -27,9 +62,34 @@ class LoginTableViewController: UITableViewController {
         
         self.bgView.layer.insertSublayer(newLayer, at: 0)
     }
-    
-    
-    
+    // secondcode
+//    @objc func imageTapped(tapGestureRecognizer: UIGestureRecognizer){
+//        let tappedImage = tapGestureRecognizer.view as! UIImageView
+//
+//        if iconClick{
+//            iconClick = false
+//            tappedImage.image = UIImage(named: "openeye")
+//            txtPassword.isSecureTextEntry = false
+//
+//        } else{
+//            iconClick = true
+//            tappedImage.image = UIImage(named: "closedeye")
+//            txtPassword.isSecureTextEntry = true
+//        }
+//    }
+    // firstcode
+    @IBAction func btnPasswordVisibilityClicked(_ sender: Any) {
+        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
+        if (sender as! UIButton).isSelected {
+            self.txtPassword.isSecureTextEntry = false
+            button.setImage(UIImage(named: "openeye1"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0 ))
+        }else{
+            self.txtPassword.isSecureTextEntry = true
+            button.setImage(UIImage(named: "closedeye4"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0))
+        }
+    }
  
     
     @IBAction func btnLoginClicked(_ sender: UIButton) {
