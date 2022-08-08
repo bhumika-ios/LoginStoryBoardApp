@@ -9,9 +9,22 @@ import UIKit
 
 class OTPScreenTableTableViewController: UITableViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet var OtpBackgr: UIView!
     @IBOutlet weak var txtVeyfyCode: UITextField!
+    @IBOutlet var OtpBg: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let colorTop = UIColor(red: 0.87, green: 0.37, blue: 0.54, alpha: 1.00).cgColor
+        let colorBottom = UIColor(red: 0.97, green: 0.73, blue: 0.59, alpha: 1.00).cgColor
+       
+        let newLayer = CAGradientLayer()
+        newLayer.frame = self.OtpBackgr.bounds
+        newLayer.colors = [ colorTop, colorBottom ]
+        
+        
+        self.OtpBackgr.layer.insertSublayer(newLayer, at: 0)
+        
         txtVeyfyCode.delegate = self
 
     }

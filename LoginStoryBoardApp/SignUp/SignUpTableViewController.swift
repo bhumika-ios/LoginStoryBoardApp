@@ -14,10 +14,37 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
+    let button = UIButton(type: .custom)
+    let button1 = UIButton(type: .custom)
+    
     
     @IBOutlet var bgView2: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // password
+        
+        txtPassword.rightViewMode = .unlessEditing
+
+        button.setImage(UIImage(named: "closedeye4"), for: .normal)
+
+       // button.imageEdgeInsets = UIEdgeInsets(top: 5, left: -24, bottom: 5, right: 15)
+        //button.frame = CGRect(x: 0, y: 0, width: UIImage(named: "closedeye")!.size.width, height: UIImage(named: "closedeye")!.size.height)
+        button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 25), y: CGFloat(5), width: CGFloat(15), height: CGFloat(25))
+        button.addTarget(self, action: #selector(self.btnPasswordVisibilityClicked), for: .touchUpInside)
+        txtPassword.rightView = button
+        txtPassword.rightViewMode = .always
+        
+        // confirmpassword
+        
+        button1.setImage(UIImage(named: "closedeye4"), for: .normal)
+
+       // button.imageEdgeInsets = UIEdgeInsets(top: 5, left: -24, bottom: 5, right: 15)
+        //button.frame = CGRect(x: 0, y: 0, width: UIImage(named: "closedeye")!.size.width, height: UIImage(named: "closedeye")!.size.height)
+        button1.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 25), y: CGFloat(5), width: CGFloat(15), height: CGFloat(25))
+        button1.addTarget(self, action: #selector(self.btnConfirmPasswordVisibilityClicked), for: .touchUpInside)
+        txtConfirmPassword.rightView = button1
+        txtConfirmPassword.rightViewMode = .always
+        
         let colorTop = UIColor(red: 0.87, green: 0.37, blue: 0.54, alpha: 1.00).cgColor
         let colorBottom = UIColor(red: 0.97, green: 0.73, blue: 0.59, alpha: 1.00).cgColor
        
@@ -31,6 +58,36 @@ class SignUpTableViewController: UITableViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgProfile.addGestureRecognizer(tapGesture)
     }
+    // password
+    
+    @IBAction func btnPasswordVisibilityClicked(_ sender: Any) {
+        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
+        if (sender as! UIButton).isSelected {
+            self.txtPassword.isSecureTextEntry = false
+            button.setImage(UIImage(named: "openeye1"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0 ))
+        }else{
+            self.txtPassword.isSecureTextEntry = true
+            button.setImage(UIImage(named: "closedeye4"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0))
+        }
+    }
+    
+    //confirmpassword
+    
+    @IBAction func btnConfirmPasswordVisibilityClicked(_ sender: Any) {
+        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
+        if (sender as! UIButton).isSelected {
+            self.txtConfirmPassword.isSecureTextEntry = false
+            button1.setImage(UIImage(named: "openeye1"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0 ))
+        }else{
+            self.txtConfirmPassword.isSecureTextEntry = true
+            button1.setImage(UIImage(named: "closedeye4"), for: .normal)
+           // button.frame =  CGRect(x: CGFloat(txtPassword.frame.size.width - 0), y: CGFloat(0), width: CGFloat(0), height: CGFloat(0))
+        }
+    }
+    
     @objc
     func imageTapped(tapGestureRecognizer: UIGestureRecognizer){
        // print("Image Tapped!")
